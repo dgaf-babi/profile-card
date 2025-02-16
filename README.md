@@ -12,7 +12,7 @@
     <div class="profile-card">
         <!-- Profile Image Section -->
         <div class="profile-img">
-           <img src="JD.jpg">
+           <img src="jen.jpg">
         </div>
         <!-- Profile Info Section -->
         <div class="profile-info">
