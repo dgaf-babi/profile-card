@@ -1,48 +1,70 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fc;
+}
+
 /* Profile Card Styling */
 .profile-card {
-    width: 300px;
+    width: 350px;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    font-family: Arial, sans-serif;
+    text-align: center;
     transition: transform 0.3s ease-in-out;
 }
 
 .profile-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
 }
 
 /* Profile Image Styling */
-.profile-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #f0f0f0;
+.profile-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid #fff;
 }
 
-/* Profile Info Styling */
+/* Profile Info Section Styling */
 .profile-info {
     padding: 20px;
-    text-align: center;
 }
 
-.name {
+.profile-info h2 {
     font-size: 22px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
-.title {
-    font-size: 16px;
-    font-style: italic;
-    color: #777;
-    margin-bottom: 15px;
-}
-
-.description {
+.profile-info .bio {
     font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Social Media Links Styling */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 20px;
     color: #555;
-    line-height: 1.6;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #007bff; /* Change color on hover */
 }
